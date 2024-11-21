@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: jh-shop-user-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/jh_shop-user?allowPublicKeyRetrieval=true&characterEncoding=UTF-8&useSSL=false&allowMultiQueries=true
+    username: root
+    password: root
