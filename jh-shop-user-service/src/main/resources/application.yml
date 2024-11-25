@@ -2,6 +2,17 @@ spring:
   application:
     name: jh-shop-user-service
   datasource:
-    url: jdbc:mysql://localhost:3306/jh_shop-user?allowPublicKeyRetrieval=true&characterEncoding=UTF-8&useSSL=false&allowMultiQueries=true
+    url: jdbc:mysql://localhost:3306/jh_shop_user?allowPublicKeyRetrieval=true&characterEncoding=UTF-8&useSSL=false&allowMultiQueries=true
     username: root
     password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  servlet:
+    context-path: /jh-shop-user-service
+  port: 8080
+
+#logging:
+#  level:
+#    org.springframework: DEBUG
+#    pers.jhshop.user: DEBUG
